@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Personal info form</title>
+  </head>
+  <body>
+    <form action="https://formspree.io/f/mlevqjpv" method="post">
+      <fieldset>
+        <legend>Personal info</legend>
+        <label for="f-name">First Name:</label>
+        <input type="text" name="f-name" id="f-name" required />
+        <label for="s-name"> Surname:</label>
+        <input type="text" name="s-name" id="s-name" />
+        <label for="email"> Email:</label>
+        <input type="email" name="email" id="email" />
+        <br />
+        <br />
+        <label for="birthday"> Date of birth</label>
+        <input type="date" name="birthday" id="birthday" />
+        <input type="radio" name="gender" id="male" value="male" />
+        <label for="male">male</label>
+        <input type="radio" name="gender" id="female" value="female" />
+        <label for="female">female</label>
+        <br />
+        <br />
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option value="israel">israel</option>
+          <option value="usa">USA</option>
+          <option value="UK">UK</option>
+        </select>
+        <br />
+        <br />
+      </fieldset>
+      <fieldset>
+        <legend>Profile</legend>
+        <label for="profile-image">Profile image</label>
+        <input
+          type="file"
+          id="profile-image"
+          accept=".gif, .jpeg, .png, .jpg"
+        />
+        <label for="nick-name">Nickname:</label>
+        <input type="text" id="nick-name" name="nick-name" />
+        <label for="f-coloer">Favorite color:</label>
+        <input type="color" name="f-color" id="f-color" value="#ff0000" />
+        <br />
+        <br />
+        <label for="password">Password:</label>
+        <input type="password" id="password" />
+        <br />
+        <br />
+        <label for="bio">Bio:</label>
+        <br />
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="About yourself"
+        ></textarea>
+      </fieldset>
+      <fieldset>
+        <legend>Favorite Animal</legend>
+        <input type="checkbox" name="dogs" id="dogs" />
+        <label for="dogs">Dogs</label>
+        <input type="checkbox" name="cats" id="cats" />
+        <label for="cats">Cats</label>
+        <input type="checkbox" name="camels" id="camels" />
+        <label for="camels">Camels</label>
+        <input type="checkbox" name="hamsters" id="hamsters" />
+        <label for="hamsters">Hamsters</label>
+        <input type="checkbox" name="unicorns" id="unicorns" />
+        <label for="unicorns">Unicorns</label>
+      </fieldset>
+      <fieldset>
+        <legend>Very Peaky Questions</legend>
+        <label for="hight">How tall are you (cm)</label>
+        <input type="number" name="hight" id="hight" />
+        <label for="happy">How Happy are you?</label>
+        <input
+          type="range"
+          id="happy"
+          name="happy"
+          min="0"
+          max="10"
+          value="0"
+        />
+      </fieldset>
+
+      <br />
+      <input type="reset" />
+      <br />
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
